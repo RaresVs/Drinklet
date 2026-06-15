@@ -1,0 +1,115 @@
+body {
+  background-color: #1E1E1E; color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0; display: flex; justify-content: center; min-height: 100vh;
+}
+.container { width: 100%; max-width: 480px; padding: 20px; text-align: center; }
+.login-box { margin-top: 50px; }
+
+input {
+  width: 100%; padding: 12px; margin: 10px 0; background: #333;
+  border: 1px solid #555; border-radius: 8px; color: white; font-size: 16px; box-sizing: border-box;
+}
+
+button { cursor: pointer; border: none; font-weight: bold; }
+.btn-primary { width: 100%; padding: 15px; background: #2196F3; color: white; border-radius: 8px; font-size: 16px; margin-top: 10px; }
+.btn-logout { background: #444; color: #ff5722; padding: 5px 10px; border-radius: 5px; }
+.link { color: #4CAF50; cursor: pointer; margin-top: 20px; font-weight: bold; }
+
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.tabs { display: flex; margin-bottom: 20px; border-bottom: 1px solid #444; }
+.tabs button { flex: 1; padding: 10px; background: transparent; color: gray; font-size: 16px; }
+.tabs button.active { color: #2196F3; border-bottom: 2px solid #2196F3; }
+
+/* --- STILURI PENTRU BUTONUL MAGIC --- */
+.mode-switcher { margin-bottom: 20px; }
+.btn-mode {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+/* Cand e pe PLUS (Verde) */
+.mode-plus {
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 0 4px 0 #2E7D32;
+}
+/* Cand e pe MINUS (Rosu) */
+.mode-minus {
+  background-color: #F44336;
+  color: white;
+  box-shadow: 0 4px 0 #C62828;
+}
+.btn-mode:active { transform: translateY(2px); box-shadow: none; }
+
+
+/* STIL CARDURI */
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.card {
+  aspect-ratio: 1; border-radius: 50%; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; border: 4px solid white;
+  cursor: pointer; transition: transform 0.1s;
+}
+.card:active { transform: scale(0.95); opacity: 0.8; }
+
+.yellow {
+    background: #FFEB3B;
+    color: black;
+}
+.red {
+    background: #D50000;
+}
+.blue {
+    background: #2962FF;
+}
+.purple {
+    background: #9C27B0;
+}
+
+.score {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.row {
+    background: #333;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.rank {
+    width: 30px;
+    height: 30px;
+    background: #FFD700;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px; }
+.info {
+    flex: 1;
+    text-align: left;
+}
+.name {
+    font-size: 18px;
+    font-weight: bold;
+ }
+.details {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 2px;
+}
+.total {
+    font-size: 24px;
+    color: #4CAF50;
+    font-weight: bold;
+}
